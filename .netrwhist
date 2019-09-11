@@ -1,6 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =4
-let g:netrw_dirhist_1='/home/eric/src/github.com/coreos-inc/cluster-directory/test'
-let g:netrw_dirhist_2='/home/eric/src/github.com/coreos-inc/cluster-directory/scripts'
-let g:netrw_dirhist_3='/home/eric/src/github.com/kubernetes-incubator/bootkube/hack'
-let g:netrw_dirhist_4='/home/eric/src/github.com/kubernetes-incubator/bootkube'
