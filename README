@@ -1,8 +1,1 @@
-Instructions for setting up my Vim environment.
-
-Copy "vimrc" file to ~/.vimrc.
-
-Installing Go and Rust packages:
-
-    git clone https://github.com/fatih/vim-go.git ~/.vim/pack/plugins/start/vim-go
-    git clone https://github.com/rust-lang/rust.vim ~/.vim/pack/plugins/start/rust.vim
+vim configuration file
