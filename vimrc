@@ -15,10 +15,10 @@ set belloff=all           " diable terminal bell (why is this a thing?!?)
 
 " Formatters for various languages
 
-autocmd BufWritePost *.go :normal ma
+autocmd BufWritePost *.rs :normal ma
 autocmd BufWritePost *.rs silent !rustfmt <afile> 2>/dev/null
 autocmd BufWritePost *.rs edit
-autocmd BufWritePost *.go :normal `a
+autocmd BufWritePost *.rs :normal `a
 
 autocmd BufWritePost *.go :normal ma
 autocmd BufWritePost *.go silent !goimports -w <afile> 2>/dev/null
