@@ -15,11 +15,12 @@ set belloff=all           " diable terminal bell (why is this a thing?!?)
 
 " Formatters for various languages
 
-autocmd BufWritePost *.rs !rustfmt <afile> 2>/dev/null
+autocmd BufWritePost *.go :normal ma
+autocmd BufWritePost *.rs silent !rustfmt <afile> 2>/dev/null
 autocmd BufWritePost *.rs edit
+autocmd BufWritePost *.go :normal `a
 
+autocmd BufWritePost *.go :normal ma
 autocmd BufWritePost *.go silent !goimports -w <afile> 2>/dev/null
 autocmd BufWritePost *.go edit
-
-autocmd BufWritePost *.swift !swift-format -i <afile> 2>/dev/null
-autocmd BufWritePost *.swift edit
+autocmd BufWritePost *.go :normal `a
