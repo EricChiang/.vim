@@ -13,6 +13,17 @@ set tabstop=4             " set tabwidth to 4
 set noeol                 " no new line at end of file
 set belloff=all           " diable terminal bell (why is this a thing?!?)
 
+" Open file viewer
+let g:netrw_banner = 0
+let g:netrw_liststyle = 3
+let g:netrw_browse_split = 4
+let g:netrw_altv = 1
+let g:netrw_winsize = 10
+augroup ProjectDrawer
+  autocmd!
+  autocmd VimEnter * :Vexplore
+augroup END
+
 " Formatters for various languages
 
 autocmd BufWritePost *.go :normal ma
